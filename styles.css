@@ -1,0 +1,67 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #141414; /* Fondo oscuro */
+  color: #ffffff; /* Texto blanco */
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  transition: color 0.3s ease; /* Transición suave para el cambio de color del texto */
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #1976d2; /* Azul inspirado en el sistema solar */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave para el cambio de color de fondo y escala */
+}
+
+button:hover {
+  background-color: #115293; /* Azul más oscuro al pasar el ratón */
+  transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el ratón */
+}
+
+#quiz, #result {
+  margin-top: 20px;
+}
+
+#result p {
+  font-size: 18px;
+}
+
+.option {
+  display: block;
+  padding: 10px;
+  margin: 5px auto;
+  width: 80%;
+  max-width: 300px;
+}
+
+/* Agregar animaciones para planetas y estrellas */
+.planet, .star, .comet {
+  animation: moveObject 5s linear infinite alternate; /* Animación de desplazamiento */
+}
+
+@keyframes moveObject {
+  from {
+    transform: translateY(0px) rotate(0deg);
+  }
+  to {
+    transform: translateY(-20px) rotate(360deg);
+  }
+}
